@@ -1,0 +1,21 @@
+{
+
+    "manifest_version": 2,
+    "name": "Case converter",
+    "version": "1.0",
+  
+    "description": "Converts camel case to kebab case, and vice-versa.",
+    "icons": {
+      "48": "icons/kebab-48.png"
+    },
+  
+    "permissions": [
+      "activeTab"
+    ],
+  
+    "browser_action": {
+      "default_icon": "icons/kebab-48.png",
+      "default_title": "Case converter",
+      "default_popup": "popup/case_converter.html"
+    }  
+  }
