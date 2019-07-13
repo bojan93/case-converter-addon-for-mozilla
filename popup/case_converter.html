@@ -1,9 +1,33 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="case_converter.css"/>
-    </head>
-    <body>
-        my first popup
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="case_converter.css" />
+</head>
+
+<body>
+    <div id="inputDiv">
+        <div id="selectDiv">
+            <label for="fromCase">From:</label>
+            <select id="fromCase">
+                <option value="camelCase">Camel case</option>
+                <option value="kebabCase">Kebab case</option>
+            </select>
+            <label for="toCase">To:</label>
+            <select id="toCase">
+                <option value="camelCase">Camel case</option>
+                <option value="kebabCase">Kebab case</option>
+            </select>
+        </div>
+        <input id="input" type="text">
+        <button id="convertButton">Convert</button>
+
+    </div>
+    <div id="outputDiv">
+        <input id="output" type="text" placeholder="Conversion result" readonly>
+        <button id="copyButton">Copy</button>
+    </div>
+    <script src="case_converter.js"></script>
+</body>
+
 </html>
